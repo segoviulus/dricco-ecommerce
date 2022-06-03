@@ -8,13 +8,14 @@ import ReactDOM from 'react-dom/client';
 //Agarrar una app que ya exista en React 
 import App from './App';
 
+
 /*function App() {
   return "Hola Mundo desde React";
 }*/
 
 // const App = () => "Hola Mundo desde React";
 
-import "./estilos.css"
+import "./sass/main.scss";
 
 //Mostrar la App en el DOM
 const root = ReactDOM.createRoot(document.getElementById('root'));

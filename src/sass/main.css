@@ -1,0 +1,72 @@
+/*
+COLORES
+*/
+/*
+FONT FAMILY
+*/
+/*
+PADDING
+*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+.header__icon {
+  height: 25px;
+  padding-left: 15px;
+}
+
+.header__menu {
+  padding: 20px 0px 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menuGen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px 20px 40px;
+  height: 80px;
+  background: #092340;
+}
+
+.header__btn {
+  padding: 20px 40px;
+  background-color: #4EACF0;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.header__link {
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.header__link:hover {
+  color: #FC5226;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
