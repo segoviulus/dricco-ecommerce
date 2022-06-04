@@ -1,0 +1,21 @@
+.degrade{
+    display: block;
+    height: 8px;
+    background: #55c8dc;
+    background: linear-gradient(90deg,#55c8dc 0%,#e00a95 40%,#fc7e3b 70%,#ffde02 100%);
+    width: 100%;
+}
+
+.texto14{
+    font-size: $font-14;
+    font-family: $font;
+    font-weight: $font-400;
+    color: $color-light;
+}
+
+.texto16{
+    font-size: $font-16;
+    font-family: $font;
+    font-weight: $font-400;
+    color: $color-light;
+}
