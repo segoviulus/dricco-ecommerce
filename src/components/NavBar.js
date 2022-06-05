@@ -2,8 +2,7 @@
 import LogoHeader from '../assets/images/logo-dricco.avif';
 import CartWidget from './CartWidget';
 
-const NavBar = () => {
-    ;
+const NavBar = () => {;
 return (
    <header className='header__menuGen'>
         <nav className='header__menu'>
