@@ -10,7 +10,6 @@ return (
     <>
         <TopBarDegrade/>
         <NavBar/>
-        <Categorias/>
         <ItemListContainer hero="Bienvenidos a la tienda!"/>
     </>
 )

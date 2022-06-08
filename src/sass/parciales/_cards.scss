@@ -99,3 +99,33 @@
         }
     }
 
+    .cardContador{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__stock{
+            font-size: $font-14;
+            font-family: $font;
+            font-weight: $font-400;
+            color: $color-btn2;
+            padding: 10px 10px;
+            border: 1px solid $color-btn2;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        &__btn{
+            color: $color-light;
+            font-size: $font-14;
+            font-family: $font;
+            font-weight: $font-700;
+            border-radius: 5px;
+            letter-spacing: .025rem;
+            background-color: $color-btn1;
+            border: none;
+            width: 25px;
+            padding: 10px 0;
+            text-align: center;
+            cursor: pointer;
+            }
+    }
+    

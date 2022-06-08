@@ -19,11 +19,7 @@
         width: 100%;
     }
     &__menuGen{
-        display: flex;
-        align-items: center;
-        height: 70px;
         background: $color-ppal;
-        border-bottom: 2px solid $color-hover;
     }
     &__menuCat{
         display: flex;
@@ -32,6 +28,7 @@
         padding: 20px 40px 20px 40px;
         height: 50px;
         background: $color-ppal;
+        border-top: 2px solid $color-hover;
     }
     &__btn{
         padding: 20px 40px;

@@ -1,6 +1,7 @@
 import React from 'react'
 import Product from './Product'
 
+
 function ItemListContainer(props) {
   return (
     <>
@@ -10,7 +11,7 @@ function ItemListContainer(props) {
     precio={59.599}
     desc='46% OFF'
     condicion='Contado'
-    precio2={31.999}
+    precio2={39.599}
     />
     </>
     
