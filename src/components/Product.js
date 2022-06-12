@@ -21,7 +21,6 @@ function Product(props) {
             </div>
             <div>
               <ItemCount stock={5} onAdd={()=>{}} initial= {1}/>
-              <button className='cardBtn'>Agregar al carrito</button>
             </div>
             <div className='cardCompra'>
               <div className='cardEnvio'>
@@ -35,5 +34,6 @@ function Product(props) {
     </section>
   )
 }
+
 
 export default Product

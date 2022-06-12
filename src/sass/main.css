@@ -134,6 +134,30 @@ PADDING
 
 .card {
   text-align: center;
+  margin: 10px;
+  max-width: 380px;
+  border: 1px solid #979797;
+  background-color: #fff;
+}
+
+.cardList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin: 30px 30px;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  padding-bottom: 12px;
+  padding-top: 10px;
 }
 
 .cardTitulo {
@@ -142,7 +166,7 @@ PADDING
   font-weight: 400;
   color: #434343;
   margin-bottom: 7px;
-  height: 48px;
+  height: 30px;
 }
 
 .cardCondicion {
@@ -188,7 +212,6 @@ PADDING
   border-radius: 5px;
   display: inline-block;
   position: relative;
-  width: 50px;
 }
 
 .cardPrecio2 {
@@ -203,14 +226,16 @@ PADDING
   color: #fff;
   font-size: 0.875rem;
   font-family: "Rubik", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 5px;
   letter-spacing: .025rem;
   background-color: #7423B4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
-  width: 30%;
-  padding: 10px 0;
-  margin-top: 10px;
+  padding: 7px 7px;
+  margin-left: 10px;
   cursor: pointer;
 }
 
@@ -260,6 +285,7 @@ PADDING
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 7px;
 }
 
 .cardContador__stock {
@@ -267,10 +293,10 @@ PADDING
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: #979797;
-  padding: 10px 10px;
+  padding: 7px 8px;
   border: 1px solid #979797;
   border-radius: 5px;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .cardContador__btn {
@@ -283,7 +309,7 @@ PADDING
   background-color: #7423B4;
   border: none;
   width: 25px;
-  padding: 10px 0;
+  padding: 7px 0;
   text-align: center;
   cursor: pointer;
 }

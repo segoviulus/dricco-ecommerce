@@ -1,19 +1,20 @@
 import React from 'react'
-import Product from './Product'
+import { useState, useEffect } from 'react'
+import customFetch from '../utils/customFetch'
+import productList from '../utils/productList'
+import ItemList from './ItemList'
 
+function ItemListContainer() {
+  const [items, setItems] = useState([])
 
-function ItemListContainer(props) {
+  useEffect(() => {
+    customFetch(3000, productList) //demora de 3 seg para simular la carga de productos
+    .then(resultado => setItems(resultado)) //"resultado" puede ser cualquier nombre en ambos casos
+  }, [items])
   return (
-    <>
-    <p className='titulo32'>{props.hero}</p>
-    <Product
-    titulo='Tv Noblex 32" Dk 32x5000 Smart Hd1/22'
-    precio={59.599}
-    desc='46% OFF'
-    condicion='Contado'
-    precio2={39.599}
-    />
-    </>
+    <div className='cardList'>
+      <ItemList productList={items}/>
+    </div>
     
   )
 }

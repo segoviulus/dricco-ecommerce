@@ -15,7 +15,7 @@ import Swal from "sweetalert2"
       } else {
         Swal.fire({
           title: 'Lo sentimos',
-          text: 'No hay stock suficiente',
+          text: 'El stock maximo de este producto es de ' + stock,
           icon: 'error'
         })
       }
@@ -29,13 +29,20 @@ import Swal from "sweetalert2"
 
 
   return (
-    <section className='cardContador'>
+    <section>
+      <section className='cardContador'>
     <button className='cardContador__btn' onClick={disminuir}>-</button>
     <p className='cardContador__stock'>{contador}</p>
     <button className='cardContador__btn' onClick={aumentar}>+</button>
-    
-    
+    <div>
+    <button className='cardBtn' onClick={onAdd}>Agregar al carrito</button>
+    </div>
     </section>
+    </section>
+    
+  
+    
+    
 );
   }
 
