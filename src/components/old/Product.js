@@ -1,7 +1,7 @@
 import React from 'react'
 import ImgP from '../assets/images/products/tv-noblex-32-dk32x5000-smart-hd122-17111.avif';
 import Envio from '../assets/icons/envioW.png';
-import ItemCount from './ItemCount'
+import ItemCount from '../ItemCount'
 
 function Product(props) {
   return (

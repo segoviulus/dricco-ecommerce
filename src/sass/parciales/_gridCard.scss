@@ -1,0 +1,249 @@
+.card{
+    text-align: center;
+    margin: 10px;
+    max-width: 380px;
+    border: 1px solid $color-border;
+    background-color: $color-light;
+    &__image{
+        width: 100%;
+        height: auto;
+        padding-bottom: 12px;
+        padding-top: 10px;
+    }
+    &__titulo{
+        font-size: $font-18;
+        font-family: $font;
+        font-weight: $font-400;
+        color: $color-texto1;
+        margin-bottom: 7px;
+        height: 30px;
+    }
+    &__condicion{
+        font-size: $font-16;
+        font-family: $font;
+        font-weight: $font-700;
+        color: $color-texto1;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    &__precio2{
+        font-size: $font-45;
+        font-family: $font;
+        font-weight: $font-700;
+        color: $color-secu;
+        line-height: 45px;
+    }
+    &__compra{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 35px;
+        width: 100%;
+        padding: 0 10px 0 10px ;
+        background-color: $color-secu;
+        margin-top: 15px;
+    }
+    &__envio{
+        display: flex;
+        align-items: center;
+    }
+    &__envioIcon{
+        height: 20px;
+    }
+    &__envioText{
+        padding-left: 10px;
+        width: 50px;
+        text-align: center;
+    }
+}
+
+.singlecard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: $color-light;
+    border: 1px solid $color-border;
+    padding: $pad-contorno;
+    &__image{
+        width: 100%;
+        object-fit: scale-down;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    &__info{
+        max-width: 50%;
+    }
+    &__cat{
+        display: flex;
+        
+    }
+    &__titulo{
+        font-size: $font-32;
+        font-family: $font;
+        font-weight: $font-400;
+        color: $color-texto1;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    &__etiq{
+        background: $color-enfasis1;
+        height: 24px;
+        width: 185px;
+        color: $color-light;
+        font-family: $font;
+        font-size: $font-12;
+        font-weight: $font-500;
+        text-align: center;
+        padding: 3px 10px;
+        margin-right: 17px;
+        border-radius: 4px;
+        width: 100%;
+    }
+    &__condicion{
+        font-size: $font-16;
+        font-family: $font;
+        font-weight: $font-700;
+        color: $color-texto1;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    &__card{
+        border: 1px solid $color-border;
+        border-radius: 10px 10px 0 0;
+
+    }
+    &__precios{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    &__precio2{
+        font-size: $font-45;
+        font-family: $font;
+        font-weight: $font-500;
+        color: $color-enfasis1;
+        line-height: 45px;
+        text-align: center;
+    }
+    &__compra{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 35px;
+        width: 100%;
+        padding: 0 10px 0 10px ;
+        background-color: $color-secu;
+        margin-top: 15px;
+    }
+    &__envio{
+        display: flex;
+        align-items: center;
+    }
+    &__icon15{
+        height: 15px;
+        padding-right: 5px;
+    }
+    &__icon20{
+        height: 20px;
+    }
+    &__envioText{
+        padding-left: 10px;
+        width: 50px;
+        text-align: center;
+    }
+}
+
+.cardList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin: 30px 30px;
+}
+
+
+.cardAhorro{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 100%;
+    &__precio {
+        font-size: $font-16;
+        font-family: $font;
+        font-weight: $font-400;
+        color: $color-btn2;
+        text-decoration: line-through;
+        width: auto;
+        margin: 5px 5px 0 0;
+    }
+    &__desc{
+        font-size: $font-16;
+        font-family: $font;
+        font-weight: $font-700;
+        color: $color-light;
+        text-transform: uppercase;
+        background-color: $color-enfasis1;
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        position: relative;
+    }
+}
+
+
+.cardBtn{
+    color: $color-light;
+    font-size: $font-14;
+    font-family: $font;
+    font-weight: $font-400;
+    border-radius: 5px;
+    letter-spacing: .025rem;
+    background-color: $color-btn1;
+    align-items: center;
+    border: none;
+    padding: 7px 7px;
+    margin-left: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: $color-ppal;}
+    }
+
+
+    .cardContador{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        &__stock{
+            font-size: $font-14;
+            font-family: $font;
+            font-weight: $font-400;
+            color: $color-btn2;
+            padding: 7px 8px;
+            border: 1px solid $color-border;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        &__btn{
+            color: $color-light;
+            font-size: $font-14;
+            font-family: $font;
+            font-weight: $font-700;
+            border-radius: 5px;
+            letter-spacing: .025rem;
+            background-color: $color-btn1;
+            border: none;
+            width: 25px;
+            padding: 7px 0;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                background-color: $color-ppal;}
+            }
+    }
+    

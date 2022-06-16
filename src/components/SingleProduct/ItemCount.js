@@ -26,22 +26,20 @@ import Swal from "sweetalert2"
             setContador(contador - 1);
         }
     }
-
+  
 
   return (
     <section>
       <section className='cardContador'>
-    <button className='cardContador__btn' onClick={disminuir}>-</button>
-    <p className='cardContador__stock'>{contador}</p>
-    <button className='cardContador__btn' onClick={aumentar}>+</button>
-    <div>
-    <button className='cardBtn' onClick={onAdd}>Agregar al carrito</button>
-    </div>
+        <button className='cardContador__btn' onClick={disminuir}>-</button>
+        <p className='cardContador__stock'>{contador}</p>
+        <button className='cardContador__btn' onClick={aumentar}>+</button>
+        <div>
+          <button className='cardBtn' onClick={onAdd}>Agregar al carrito</button>
+         </div>
+      </section>
     </section>
-    </section>
-    
   
-    
     
 );
   }

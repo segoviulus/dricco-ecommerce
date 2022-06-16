@@ -14,18 +14,44 @@
     text-align: center;
     text-transform: uppercase;
 }
-.texto12{
+
+@mixin texto12{
     font-size: $font-12;
     font-family: $font;
     font-weight: $font-400;
+}
+
+.txt12l{
+    @include texto12;
     color: $color-light;
 }
 
-.texto14{
+.txt12d{
+    @include texto12;
+    color: $color-dark;
+}
+
+.txt12h{
+    @include texto12;
+    color: $color-btn2;
+    &:hover{
+        color: $color-hover;
+    }
+}
+
+@mixin texto14{
     font-size: $font-14;
     font-family: $font;
     font-weight: $font-400;
+}
+.txt14l{
+    @include texto14;
     color: $color-light;
+}
+.txt14d{
+    @include texto14;
+    color: $color-dark;
+    padding-bottom: 15px;
 }
 
 .texto16{

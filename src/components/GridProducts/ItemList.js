@@ -10,7 +10,7 @@ return(
         titulo={p.titulo}
         precio={p.precio}
         desc={p.desc}
-        condicion={p.condicion}
+        condicion1={p.condicion1}
         precio2={p.precio2}
         key={p.id}
         stock={p.stock}

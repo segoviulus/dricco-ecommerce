@@ -1,5 +1,5 @@
 // Fragmento <> </> para no utilizar etiquetas
-import LogoHeader from '../assets/images/logo-dricco.avif';
+import LogoHeader from '../../assets/images/logo-dricco.avif';
 import CartWidget from './CartWidget';
 import Categorias from './Categorias';
 
