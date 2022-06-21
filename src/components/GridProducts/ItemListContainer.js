@@ -3,14 +3,30 @@ import { useState, useEffect } from 'react'
 import { customFetch } from '../../utils/customFetch'
 import productList from '../../utils/productList'
 import ItemList from './ItemList'
+import { getProductByCat } from '../../utils/customFetch'
+import { useParams} from "react-router-dom"
 
 function ItemListContainer() {
   const [items, setItems] = useState([])
+  const {categoria} = useParams();
 
   useEffect(() => {
-    customFetch(2000, productList) //demora de 2 seg para simular la carga de productos
-    .then(resultado => setItems(resultado)) //"resultado" puede ser cualquier nombre en ambos casos
+    if(!categoria){
+      customFetch(0, productList)
+      .then (r => {
+        setItems(r)
+      });
+    }
+    else{
+      getProductByCat(categoria)
+      .then (res => {
+        setItems(res)
+      });
+    }
   }, [items])
+
+  if (items.length > 0)
+
   return (
     <div className='cardList'>
       <ItemList productList={items}/>

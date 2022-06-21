@@ -19,7 +19,7 @@ export const getProductById = (id) => {
 export const getProductByCat = (categoria) => {
     return new Promise ((resolve) => {
         setTimeout(() => {
-            resolve(productList.filter(product => product.categoria == categoria));
+            resolve(productList.filter(product => product.categoria === categoria));
         }, 2000)
     })
 }
