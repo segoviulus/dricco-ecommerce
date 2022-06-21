@@ -33,6 +33,7 @@
 
 .txt12h{
     @include texto12;
+    text-transform: capitalize;
     color: $color-btn2;
     &:hover{
         color: $color-hover;

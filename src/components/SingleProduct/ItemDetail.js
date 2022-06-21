@@ -2,6 +2,7 @@ import React from 'react'
 import ItemCount from './ItemCount'
 import Envio from '../../assets/icons/envioW.png'
 import Categoria from '../../assets/icons/categoriaD.png'
+import { Link } from 'react-router-dom'
 
 function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, condicion1, condicion2, condicion3, precio2, stock}) {
   return (
@@ -13,7 +14,7 @@ function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, c
         <div className='singlecard__info'>
           <div className='singlecard__cat'>
             <img  className='singlecard__icon15' src={Categoria} alt="" />
-            <p className='txt12h'>{categoria}</p>
+            <Link className='txt12h' to={`/categoria/${categoria}`}>{categoria}</Link>
           </div>
           <div>
             <h3 className='singlecard__titulo'>{titulo}</h3>

@@ -129,6 +129,7 @@ PADDING
   font-size: 0.75rem;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  text-transform: capitalize;
   color: #979797;
 }
 
@@ -168,7 +169,9 @@ PADDING
 
 .card__image {
   width: 100%;
-  height: auto;
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
   padding-bottom: 12px;
   padding-top: 10px;
 }
@@ -434,6 +437,7 @@ PADDING
           align-items: center;
   border: none;
   padding: 7px 7px;
+  margin: 0 7px;
   cursor: pointer;
 }
 
