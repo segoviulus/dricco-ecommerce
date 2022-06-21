@@ -197,6 +197,7 @@ PADDING
   font-weight: 700;
   color: #29ECA2;
   line-height: 45px;
+  margin-bottom: 12px;
 }
 
 .card__compra {
@@ -433,7 +434,6 @@ PADDING
           align-items: center;
   border: none;
   padding: 7px 7px;
-  margin-left: 10px;
   cursor: pointer;
 }
 

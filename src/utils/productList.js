@@ -10,7 +10,7 @@ const productList = [
       condicion3: '1 Pago',
       precio2: 39599,
       stock: 5,
-      categoria: 'Tv',
+      categoria: 'tv',
       image: '/images/products/tvNoblex.avif',
     },
     {
@@ -24,7 +24,7 @@ const productList = [
         condicion3: '1 Pago',
         precio2: 60099,
         stock: 3,
-        categoria: 'Celular',
+        categoria: 'celular',
         image: '/images/products/celularMotorola.avif',
     },
     {
@@ -38,9 +38,37 @@ const productList = [
         condicion3: '1 Pago',
         precio2: 149099,
         stock: 4,
-        categoria: 'Aire Split',
+        categoria: 'airesplit',
         image: '/images/products/aireBgh.avif',
-    }
+    },
+    {
+      id: 4,
+      titulo: 'Tv Led BGH 32" Smart HD NTF',
+      descripcion: 'Este Smart TV de BGH viene con Wi-Fi incorporado para que puedas acceder a internet de forma inalámbrica. Disfrutá de tus app preferidas como Netflix y YouTube, entre otras.',
+      precio: 54099,
+      desc: '39% OFF',
+      condicion1: 'Contado',
+      condicion2: 'Debito',
+      condicion3: '1 Pago',
+      precio2: 32499,
+      stock: 2,
+      categoria: 'tv',
+      image: '/images/products/tvledBgh.avif',
+  },
+  {
+    id: 5,
+    titulo: 'Celular Motorola EDGE20 Lite 6.7" 6gb 128gb Gris',
+    descripcion: 'Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.',
+    precio: 121099,
+    desc: '44% OFF',
+    condicion1: 'Contado',
+    condicion2: 'Debito',
+    condicion3: '1 Pago',
+    precio2: 66699,
+    stock: 6,
+    categoria: 'celular',
+    image: '/images/products/celularMotorolaEdge20.avif',
+},
   ]
 
   export default productList;

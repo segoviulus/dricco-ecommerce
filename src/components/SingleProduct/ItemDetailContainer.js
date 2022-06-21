@@ -1,21 +1,23 @@
 import React from 'react'
 import {useEffect, useState} from 'react'
+import { useParams } from 'react-router-dom'
 import ItemDetail from './ItemDetail'
-import productList from '../../utils/productList'
-import customFetch from '../../utils/customFetch'
+import { getProductById } from '../../utils/customFetch'
 
 function ItemDetailContainer() {
-    const [item, setItem] = useState([])
-  
+
+    const [item, setItem] = useState()
+    const {id} = useParams() //useParams se usa para obtener los parametros de la url
+
     useEffect(() => {
-      customFetch(2000, productList) //demora de 2 seg para simular la carga de productos
-      .then(resultado => setItem(resultado)) //"resultado" puede ser cualquier nombre en ambos casos
-    }, [item])
+      getProductById(parseInt(id))
+      .then(response => {setItem(response)})
+    }, [])
+
     return (
       <div>
-        <ItemDetail productList={item}/>
+        <ItemDetail {...item}/>
       </div>
-      
     )
   }
 

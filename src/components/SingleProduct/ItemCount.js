@@ -26,8 +26,6 @@ import Swal from "sweetalert2"
             setContador(contador - 1);
         }
     }
-  
-
   return (
     <section>
       <section className='cardContador'>

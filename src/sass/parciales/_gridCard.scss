@@ -32,6 +32,7 @@
         font-weight: $font-700;
         color: $color-secu;
         line-height: 45px;
+        margin-bottom: 12px;
     }
     &__compra{
         display: flex;
@@ -207,7 +208,6 @@
     align-items: center;
     border: none;
     padding: 7px 7px;
-    margin-left: 10px;
     cursor: pointer;
     &:hover{
         background-color: $color-ppal;}

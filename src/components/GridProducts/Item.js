@@ -1,5 +1,6 @@
 import React from 'react'
 import Envio from '../../assets/icons/envioW.png'
+import { Link } from 'react-router-dom'
 
 function Item({id, image, titulo, precio, desc, condicion1, precio2}) {
   return (
@@ -18,7 +19,7 @@ function Item({id, image, titulo, precio, desc, condicion1, precio2}) {
         <p className='card__precio2'>${precio2}</p>
         </div>
         <div>
-          <button className='cardBtn'>VER DETALLE</button>
+          <Link className='cardBtn' to={`/producto/${id}`}>Ver detalle</Link>
         </div>
         <div className='card__compra'>
           <div className='card__envio'>
