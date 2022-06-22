@@ -23,7 +23,7 @@ function ItemListContainer() {
         setItems(res)
       });
     }
-  }, [items])
+  }, [items, categoria])
 
   if (items.length > 0)
 
