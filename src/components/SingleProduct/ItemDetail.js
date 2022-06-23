@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ItemCount from './ItemCount'
 import Envio from '../../assets/icons/envioW.png'
 import Categoria from '../../assets/icons/categoriaD.png'
 import { Link } from 'react-router-dom'
 
+
 function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, condicion1, condicion2, condicion3, precio2, stock}) {
+  
+  const[ocultarConfirmar, setocultarConfirmar] = useState()
+  
+  const onAdd = (cantidadSelec) => {
+    setocultarConfirmar (cantidadSelec)
+  }
+
   return (
     <section key={id}>
       <div className='singlecard'>
@@ -45,8 +53,9 @@ function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, c
                 <p className='texto16'>COMPRA AHORA</p>
               </div>
         </div>
-        <div>
-          <ItemCount stock={stock} onAdd={()=>{}} initial= {1}/>
+        <div className='cardContador'>
+          {ocultarConfirmar ? <Link to={"/cart"} className='cardBtn'>Finalizar Compra</Link> :
+          <ItemCount stock={stock} onAdd={onAdd} initial= {0}/>}
         </div>
         </div>
       </div>

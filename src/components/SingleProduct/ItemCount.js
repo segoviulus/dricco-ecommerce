@@ -2,16 +2,14 @@ import React from 'react';
 import {useState} from 'react';
 import Swal from "sweetalert2"
 
-    const ItemCount = ({stock, initial, onAdd}) => {
-    const resultado = useState(initial); //(valor inicial, en este caso cero)
+const ItemCount = ({stock, initial, onAdd}) => {
+const resultado = useState(initial); //(valor inicial, en este caso cero)
+const contador = resultado[0];
+const setContador = resultado[1]; // const [contador,setContador] = useState(0); esta es la forma destructurada
 
-    const contador = resultado[0];
-
-    const setContador = resultado[1]; // const [contador,setContador] = useState(0); esta es la forma destructurada
-
-    const aumentar = () => {
-      if (contador < stock) {
-        setContador(contador + 1);
+const aumentar = () => {
+  if (contador < stock) {
+    setContador(contador + 1);
       } else {
         Swal.fire({
           title: 'Lo sentimos',
@@ -21,25 +19,26 @@ import Swal from "sweetalert2"
       }
     }
 
-    const disminuir = () => {
-        if(contador > 0){
-            setContador(contador - 1);
+const disminuir = () => {
+    if(contador > 0){
+      setContador(contador - 1);
         }
     }
-  return (
+
+const confirmarCarr = () => {
+  onAdd(contador)
+}
+return (
     <section>
       <section className='cardContador'>
         <button className='cardContador__btn' onClick={disminuir}>-</button>
         <p className='cardContador__stock'>{contador}</p>
         <button className='cardContador__btn' onClick={aumentar}>+</button>
         <div>
-          <button className='cardBtn' onClick={onAdd}>Agregar al carrito</button>
+          <button className='cardBtn' onClick={confirmarCarr}>Confirmar</button>
          </div>
       </section>
     </section>
-  
-    
 );
   }
-
 export default ItemCount;
