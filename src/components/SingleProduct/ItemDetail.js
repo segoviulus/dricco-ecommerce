@@ -1,16 +1,20 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ItemCount from './ItemCount'
 import Envio from '../../assets/icons/envioW.png'
 import Categoria from '../../assets/icons/categoriaD.png'
 import { Link } from 'react-router-dom'
+import { CartContext } from '../Context/CartContex'
 
 
 function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, condicion1, condicion2, condicion3, precio2, stock}) {
   
-  const[ocultarConfirmar, setocultarConfirmar] = useState()
-  
-  const onAdd = (cantidadSelec) => {
-    setocultarConfirmar (cantidadSelec)
+  const[ocultarConfirmar, setocultarConfirmar] = useState(false)
+
+  const { addItem } = useContext(CartContext)
+
+  const addToCart = (quantity) => {
+    addItem(id, image, titulo, precio, quantity)
+    setocultarConfirmar (true)
   }
 
   return (
@@ -54,8 +58,10 @@ function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, c
               </div>
         </div>
         <div className='cardContador'>
-          {ocultarConfirmar ? <Link to={"/cart"} className='cardBtn'>Finalizar Compra</Link> :
-          <ItemCount stock={stock} onAdd={onAdd} initial= {0}/>}
+          {ocultarConfirmar ?
+          (<Link to={"/cart"} className='cardBtn'>Finalizar Compra</Link>) :
+          (<ItemCount stock={stock} onAdd={addToCart} initial= {0}/>)
+          }
         </div>
         </div>
       </div>
