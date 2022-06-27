@@ -10,14 +10,14 @@ const CartProvider = ({children}) => {
 
 
  // Agregar un producto al Cart
- const addItem = (item, quantity) => {
-    if (isInCart(item.id)) {
-        let index = cartItems.findIndex((index) => (index.id === item.id))
+ const addItem = (id, image, titulo, precio, quantity) => {
+    if (isInCart(id)) {
+        let index = cartItems.findIndex((index) => (index.id === id))
         let copiaCart = [...cartItems]
         copiaCart[index].quantity += quantity
         setcartItems(copiaCart)
     } else {
-        const itemToAdd = {...item, quantity}
+        const itemToAdd = {id, image, titulo, precio, quantity}
         setcartItems([...cartItems, itemToAdd])
     }
  }
@@ -38,7 +38,7 @@ const clear = () => {
 }
 
 return (
-    <CartContext.Provider value={{cartItems, addItem, isInCart, removeItem, clear, }}>
+    <CartContext.Provider value={{cartItems, addItem, isInCart, removeItem, clear}}>
         {children}
     </CartContext.Provider>
 )
