@@ -26,7 +26,7 @@ function Item({id, image, titulo, precio, desc, condicion1, precio2}) {
           <img className='card__envioIcon' src={Envio} alt="" />
           <p className='txt12l card__envioText'>ENVIO GRATIS</p>
           </div>
-          <p className='texto16'>COMPRA AHORA</p>
+          <p className='txt16l'>COMPRA AHORA</p>
         </div>
         
     </div>

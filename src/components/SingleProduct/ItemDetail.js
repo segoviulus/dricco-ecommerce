@@ -54,12 +54,12 @@ function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, c
                   <img className='singlecard__icon20' src={Envio} alt="" />
                   <p className='txt12l singlecard__envioText'>ENVIO GRATIS</p>
                 </div>
-                <p className='texto16'>COMPRA AHORA</p>
+                <p className='txt16l'>COMPRA AHORA</p>
               </div>
         </div>
         <div className='cardContador'>
           {ocultarConfirmar ?
-          (<Link to={"/cart"} className='cardBtn'>Finalizar Compra</Link>) :
+          (<Link to={"/cart"} className='cardBtn'>Finalizar compra</Link>) :
           (<ItemCount stock={stock} onAdd={addToCart} initial= {0}/>)
           }
         </div>

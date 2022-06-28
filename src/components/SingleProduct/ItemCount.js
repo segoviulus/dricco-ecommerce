@@ -35,7 +35,7 @@ return (
         <p className='cardContador__stock'>{contador}</p>
         <button className='cardContador__btn' onClick={aumentar}>+</button>
         <div>
-          <button className='cardBtn' onClick={confirmarCarr}>Confirmar</button>
+          <button className='cardBtn' onClick={confirmarCarr}>Agregar al carrrito</button>
          </div>
       </section>
     </section>

@@ -1,0 +1,10 @@
+.page{
+    border: 1px solid $color-border;
+    padding: $pad-contorno;
+    margin: 1rem;
+    &__in{
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -55,9 +55,16 @@
     padding-bottom: 15px;
 }
 
-.texto16{
+@mixin texto16{
     font-size: $font-16;
     font-family: $font;
     font-weight: $font-400;
+}
+.txt16d{
+    @include texto16;
+    color: $color-dark;
+}
+.txt16l{
+    @include texto16;
     color: $color-light;
 }

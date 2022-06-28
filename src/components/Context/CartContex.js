@@ -22,6 +22,16 @@ const CartProvider = ({children}) => {
     }
  }
 
+ // Agrega cantidad al icono del Cart en NavBar
+const addItemNavBar = () => {
+    let quantity = 0
+    cartItems.forEach((product) => {
+        quantity = quantity + product.quantity
+})
+    return quantity
+}
+
+
 // Verifica si el producto ya fue agrgado al Cart
 const isInCart = (id) => {
     return cartItems.some((item) => (item.id === id))
@@ -38,7 +48,7 @@ const clear = () => {
 }
 
 return (
-    <CartContext.Provider value={{cartItems, addItem, isInCart, removeItem, clear}}>
+    <CartContext.Provider value={{cartItems, addItem, addItemNavBar, isInCart, removeItem, clear}}>
         {children}
     </CartContext.Provider>
 )

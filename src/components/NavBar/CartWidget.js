@@ -1,17 +1,17 @@
 import React from 'react'
 import IconCart from '../../assets/icons/IconCartW.png'
-import IconSuc from '../../assets/icons/sucursalW.png'
+import { Link } from 'react-router-dom'
 
-const CartWidget = () => {
+function CartWidget () {
   return (
-    <nav className='cart__menu'>
-      <img className='header__icon' src={IconCart} alt="" />
-      <h3 className='txt14l'>Mi Carrito</h3>
-      <img className='header__icon' src={IconSuc} alt="" />
-      <h3 className='txt14l'>Sucursales</h3>
-    </nav>
-    
+        <div className='cart__menu'>
+          <img className='header__icon' src={IconCart} alt="" />
+          <p className='cart__quantity'>0</p>
+          <Link to={`/cart`}>
+          <h3 className='cart__txt'>Mi Carrito</h3>
+          </Link>
+        </div>
   )
-}
+       }
 
 export default CartWidget;
