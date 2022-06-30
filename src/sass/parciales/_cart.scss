@@ -1,3 +1,16 @@
+@mixin for-tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin for-phone {
+      @media (max-width: 425px) {
+        @content;
+      }
+    }
+
+
 .cart {
     display: flex;
     align-items: center;
@@ -31,20 +44,36 @@
         color: $color-light;
         padding-left: 8px;
     }
-    &__btn{
-        color: $color-light;
+    &__items{
         font-size: $font-14;
         font-family: $font;
         font-weight: $font-400;
-        border-radius: 25px;
-        letter-spacing: .025rem;
-        background-color: $color-border;
-        align-items: center;
-        border: none;
+        color: $color-dark;
+        padding-left: 8px;
+    }
+    &__total{
+        font-size: $font-16;
+        font-family: $font;
+        font-weight: $font-700;
+        padding-left: 8px;
+    }
+    &__btn{
+        color: $color-btn1;
+        font-size: $font-14;
+        font-family: $font;
+        font-weight: $font-400;
+        border-radius: 7px;
+        border: 1px solid $color-btn1;
+        background-color: $color-light;
         padding: 3px 7px;
         cursor: pointer;
             &:hover{
-                background-color: $color-enfasis2;}
+                background-color: $color-ppal;
+                color: $color-light;}
+    }
+    &__icon{
+        height: 18px;
+        cursor: pointer;
     }
     &__clear{
         display: flex;
@@ -71,6 +100,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 100%;
+                
             }
         }
     }

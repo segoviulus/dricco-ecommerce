@@ -7,4 +7,21 @@
         margin-left: auto;
         margin-right: auto;
     }
+    &__center{
+        text-align: center;
+    }
+    &__flex{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        &__center{
+            justify-content: center;
+        }
+        &__end{
+            justify-content: flex-end;
+        }
+        }
+    
+    
+    
 }

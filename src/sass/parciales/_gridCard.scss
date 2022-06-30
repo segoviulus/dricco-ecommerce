@@ -1,12 +1,24 @@
+@mixin for-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-phone {
+    @media (max-width: 425px) {
+      @content;
+    }
+  }
+  
+
 .card{
     text-align: center;
     margin: 10px;
-    max-width: 380px;
     border: 1px solid $color-border;
     background-color: $color-light;
     &__image{
-        width: 100%;
-        height: 350px;
+        width: 330px;
+        height: 330px;
         object-fit: contain;
         padding-bottom: 12px;
         padding-top: 10px;
@@ -17,7 +29,6 @@
         font-weight: $font-400;
         color: $color-texto1;
         margin-bottom: 7px;
-        height: 30px;
     }
     &__condicion{
         font-size: $font-16;
@@ -43,7 +54,7 @@
         width: 100%;
         padding: 0 10px 0 10px ;
         background-color: $color-secu;
-        margin-top: 15px;
+        margin-top: 25px;
     }
     &__envio{
         display: flex;
@@ -63,11 +74,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1000px;
-    margin: 20px auto;
+    margin: 20px 20px;
     background-color: $color-light;
     border: 1px solid $color-border;
     padding: $pad-contorno;
+    @include for-phone{
+        display: block;
+    }
     &__image{
         width: 100%;
         object-fit: scale-down;
@@ -76,6 +89,9 @@
     }
     &__info{
         max-width: 50%;
+        @include for-phone{
+            max-width: 100%;
+        }
     }
     &__cat{
         display: flex;
@@ -88,6 +104,9 @@
         color: $color-texto1;
         margin-top: 7px;
         margin-bottom: 7px;
+        @include for-phone{
+            font-size: $font-22;
+        }
     }
     &__etiq{
         background: $color-enfasis1;
@@ -121,6 +140,9 @@
         align-items: center;
         justify-content: space-between;
         padding: 15px;
+        @include for-tablet{
+            display: block;
+        }
     }
     &__precio2{
         font-size: $font-45;
@@ -138,7 +160,6 @@
         width: 100%;
         padding: 0 10px 0 10px ;
         background-color: $color-secu;
-        margin-top: 15px;
     }
     &__envio{
         display: flex;
@@ -206,7 +227,6 @@
     border-radius: 5px;
     letter-spacing: .025rem;
     background-color: $color-btn1;
-    align-items: center;
     border: none;
     padding: 7px 7px;
     margin: 0 7px;

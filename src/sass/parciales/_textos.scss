@@ -5,14 +5,25 @@
     background: linear-gradient(90deg,#55c8dc 0%,#e00a95 40%,#fc7e3b 70%,#ffde02 100%);
     width: 100%;
 }
-.titulo32{
-    font-size: 32px;
+
+@mixin titulo{
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     color: $color-ppal;
     margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.titulo32{
+    @include titulo;
+    font-size: $font-32;
+}
+
+.titulo22{
+    @include titulo;
+    font-size: $font-22;
 }
 
 @mixin texto12{

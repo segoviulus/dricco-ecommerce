@@ -13,7 +13,7 @@ function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, c
   const { addItem } = useContext(CartContext)
 
   const addToCart = (quantity) => {
-    addItem(id, image, titulo, precio, quantity)
+    addItem(id, image, titulo, precio2, quantity)
     setocultarConfirmar (true)
   }
 
