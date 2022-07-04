@@ -4,6 +4,7 @@ import Main from './components/Main'
 import { BrowserRouter } from 'react-router-dom';
 import { CartProvider } from './components/Context/CartContex';
 
+
 // Fragment <> </> para no utilizar etiquetas, en este caso ya tengo BrowserRouter
 const App = () => {
     

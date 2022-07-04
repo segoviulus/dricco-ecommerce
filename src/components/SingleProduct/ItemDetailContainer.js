@@ -2,7 +2,9 @@ import React from 'react'
 import {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from './ItemDetail'
-import { getProductById } from '../../utils/customFetch'
+import {doc, getDoc} from 'firebase/firestore'  // Sirve para traer muchos documentos en una coleccion
+import {collectionProductos} from '../../config/firebase'
+
 
 function ItemDetailContainer () {
 
@@ -10,8 +12,16 @@ function ItemDetailContainer () {
     const {id} = useParams() //useParams se usa para obtener los parametros de la url
 
     useEffect(() => {
-      getProductById(parseInt(id))
-      .then(response => {setItem(response)})
+      const ref = doc(collectionProductos, id)
+      getDoc(ref) //console.log(ref)
+        .then((response)=>{
+          setItem({
+            id: response.id,
+            ...response.data()
+          })
+
+        })
+      
     }, [id])
 
     if (item !== {}){
