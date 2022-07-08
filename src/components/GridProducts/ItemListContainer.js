@@ -30,6 +30,7 @@ function ItemListContainer() {
     const productos = referencia.data()
     productos.id = referencia.id
     return productos
+    
 })
     
     setItems(productList_map)

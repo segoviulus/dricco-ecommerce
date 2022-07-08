@@ -1,5 +1,4 @@
-import React from 'react'
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { CartContext  } from '../Context/CartContex'
 import IconTrash from '../../assets/icons/trash.png'
 import {Link} from 'react-router-dom'
@@ -89,11 +88,14 @@ function Cart() {
                <p className='cart__total'>TOTAL:</p>
                <p className='cart__total'>$ {obtenerTotal()}</p>          
              </div>
- 
-           
-           
-           
            </div>   
+
+           <div>
+            <div className='page__flex page__flex__end'>
+            <Link to='/checkout' className='cardBtn'>FINALIZAR COMPRA</Link>
+            </div>
+           
+           </div>
            
  
          </div>

@@ -59,7 +59,7 @@ function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, c
         </div>
         <div className='cardContador'>
           {ocultarConfirmar ?
-          (<Link to={"/cart"} className='cardBtn'>Finalizar compra</Link>) :
+          (<Link to={"/cart"} className='cardBtn'>Ir al carrito</Link>) :
           (<ItemCount stock={stock} onAdd={addToCart} initial= {0}/>)
           }
         </div>
