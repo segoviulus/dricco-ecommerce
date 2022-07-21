@@ -1,4 +1,4 @@
-const productList = [
+/* const productList = [
     {
       id: 1,
       titulo: 'Tv Noblex 32" Dk 32x5000 Smart',
@@ -72,3 +72,5 @@ const productList = [
   ]
 
   export default productList;
+
+  */

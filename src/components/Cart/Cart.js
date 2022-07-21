@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { CartContext  } from '../Context/CartContex'
 import IconTrash from '../../assets/icons/trash.png'
 import {Link} from 'react-router-dom'
+import Banners from '../utils/Banners'
 
 function Cart() {
   const {cartItems, removeItem, clear, obtenerSubtotal, obtenerTotal, addItemNavBar} = useContext(CartContext)
@@ -99,10 +100,13 @@ function Cart() {
            
  
          </div>
+         
        </div>
  )       }
 
-
+        <div>
+          <Banners/>
+         </div>
     </div>
 
     

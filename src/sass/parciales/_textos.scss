@@ -75,7 +75,18 @@
     @include texto16;
     color: $color-dark;
 }
+.txt16dc{
+    @include texto16;
+    color: $color-dark;
+    text-align: center;
+}
+
 .txt16l{
     @include texto16;
     color: $color-light;
+}
+.txt16v{
+    @include texto16;
+    color: $color-titulos;
+    font-weight: $font-500;
 }

@@ -1,0 +1,44 @@
+.footer{
+    text-align: center;
+    background: $color-ppal;
+    margin-top: 30px;
+
+&__logo {
+    height: 27px;
+    }
+&__sub{
+    font-family: $font;
+    color: $color-light;
+    font-size: $font-12;
+    font-weight: $font-400;
+    padding: 7px 0;
+}
+&__titulo{
+    font-family: $font;
+    color: $color-light;
+    font-size: $font-12;
+    font-weight: $font-400;
+}
+&__redes{
+    padding: 7px 0;
+}
+&__icons {
+    width: 1.2rem;
+    height: 1.2rem;
+    padding-left: 5px;
+}    
+
+}
+
+.copyright{
+    position: relative;
+    text-align: center;
+    background: $color-secu;
+    padding: 7px 0;
+&__text{
+    font-family: $font;
+    font-size: 0.8rem;
+    font-weight: $font-400;
+    color: $color-light;
+}
+}

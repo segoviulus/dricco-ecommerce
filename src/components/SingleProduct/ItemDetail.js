@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import ItemCount from './ItemCount'
+import Banners from '../utils/Banners'
 import Envio from '../../assets/icons/envioW.png'
 import Categoria from '../../assets/icons/categoriaD.png'
 import { Link } from 'react-router-dom'
@@ -30,7 +31,7 @@ function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, c
           </div>
           <div>
             <h3 className='singlecard__titulo'>{titulo}</h3>
-            <h5 className='txt14d'>{descripcion}</h5>
+            
           </div>
           <div className='singlecard__card'>
             <div className='singlecard__precios'>
@@ -64,6 +65,13 @@ function ItemDetail ({id, image, categoria, titulo, descripcion, precio, desc, c
           }
         </div>
         </div>
+      </div>
+      <div>
+        <Banners/>
+      </div>
+      <div className='singlecard__descripcion'>
+        <h4 className='txt16d'>Descripcion:</h4>
+        <p className='txt14d'>{descripcion}</p>
       </div>
     </section>
   )

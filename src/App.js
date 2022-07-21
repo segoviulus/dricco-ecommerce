@@ -1,6 +1,7 @@
 import TopBarDegrade from './components//NavBar/TopBarDegrade';
 import NavBar from './components/NavBar/NavBar';
 import Main from './components/Main'
+import Footer from './components/Footer/Footer'
 import { BrowserRouter } from 'react-router-dom';
 import { CartProvider } from './components/Context/CartContex';
 
@@ -14,6 +15,7 @@ return (
         <TopBarDegrade/>
         <NavBar/>
         <Main/>
+        <Footer/>
         </BrowserRouter>
         </CartProvider>
 )

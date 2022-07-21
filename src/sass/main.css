@@ -36,6 +36,12 @@ PADDING
   width: 100%;
 }
 
+@media (max-width: 425px) {
+  .header__menu {
+    padding: 20px 15px;
+  }
+}
+
 .header__menuGen {
   background: #092340;
 }
@@ -63,6 +69,12 @@ PADDING
 
 .header__logo {
   height: 40px;
+}
+
+@media (max-width: 425px) {
+  .header__logo {
+    height: 25px;
+  }
 }
 
 .header__link {
@@ -171,11 +183,33 @@ PADDING
   color: #000;
 }
 
+.txt16dc {
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
+
 .txt16l {
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: #fff;
+}
+
+.txt16v {
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #54BA48;
+  font-weight: 500;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -263,12 +297,11 @@ PADDING
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 20px 20px;
   background-color: #fff;
-  border: 1px solid #d9d9d9;
   padding: 1.375rem;
 }
 
@@ -314,6 +347,19 @@ PADDING
 @media (max-width: 425px) {
   .singlecard__titulo {
     font-size: 1.375rem;
+  }
+}
+
+.singlecard__descripcion {
+  padding: 30px 50px 50px 50px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+  .singlecard__descripcion {
+    max-width: 100%;
   }
 }
 
@@ -424,7 +470,7 @@ PADDING
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  margin: 30px 30px;
+  max-width: 1100px;
 }
 
 .cardAhorro {
@@ -669,6 +715,23 @@ PADDING
   width: 100%;
 }
 
+.root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .page {
   border: 1px solid #d9d9d9;
   padding: 1.375rem;
@@ -705,5 +768,138 @@ PADDING
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.form {
+  max-width: 500px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form__placeText {
+  border: none;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 0.8em;
+  font-family: "Rubik", sans-serif;
+  padding: 12px;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.form__btn {
+  color: #fff;
+  width: 100%;
+  font-size: 0.875rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 7px;
+  border: 1px solid #54BA48;
+  background-color: #54BA48;
+  margin-top: 15px;
+  padding: 8px 7px;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background-color: #092340;
+  color: #fff;
+  border: none;
+}
+
+.form__btn:disabled {
+  background-color: #fff;
+  color: #979797;
+  border: 1px solid #979797;
+  cursor: auto;
+}
+
+.footer {
+  text-align: center;
+  background: #092340;
+  margin-top: 30px;
+}
+
+.footer__logo {
+  height: 27px;
+}
+
+.footer__sub {
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 7px 0;
+}
+
+.footer__titulo {
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.footer__redes {
+  padding: 7px 0;
+}
+
+.footer__icons {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding-left: 5px;
+}
+
+.copyright {
+  position: relative;
+  text-align: center;
+  background: #29ECA2;
+  padding: 7px 0;
+}
+
+.copyright__text {
+  font-family: "Rubik", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 15px;
+}
+
+@media (max-width: 425px) {
+  .banner {
+    display: block;
+  }
+}
+
+.banner__txt {
+  padding-left: 7px;
+}
+
+.banner__style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #d9d9d9;
+  padding: 7px 7px;
+  margin: 20px 5px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,34 @@
+@mixin for-tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin for-phone {
+      @media (max-width: 425px) {
+        @content;
+      }
+    }
+
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    @include for-phone{
+        display: block;
+    }
+    
+    &__txt{
+        padding-left: 7px;
+    }
+    &__style{
+        display: flex;
+        align-items: center;
+        border: 1px solid $color-border;
+        padding: 7px 7px;
+        margin: 20px 5px;
+        border-radius: 5px;
+    }
+}

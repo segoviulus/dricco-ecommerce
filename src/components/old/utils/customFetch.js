@@ -1,4 +1,4 @@
-import productList from "./productList";
+/*import productList from "./productList";
 
 export const customFetch = (time, task) => {
     return new Promise ((resolve) => {
@@ -23,3 +23,4 @@ export const getProductByCat = (categoria) => {
         }, 0)
     })
 }
+*/

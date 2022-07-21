@@ -6,7 +6,7 @@ import Checkout from "./Checkout/Checkout";
 
 const Main = () => {
     return(
-        <main>
+        <main className="main">
             <Routes>
                 <Route path="/" element={<ItemListContainer/>}></Route>
                 <Route path="/categoria/:categoria" element={<ItemListContainer/>}></Route>

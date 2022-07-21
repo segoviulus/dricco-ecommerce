@@ -1,3 +1,15 @@
+@mixin for-tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin for-phone {
+      @media (max-width: 425px) {
+        @content;
+      }
+    }
+
 @mixin icon {
     height: 20px;
 }
@@ -17,6 +29,9 @@
         @include menu;
         justify-content: space-between;
         width: 100%;
+        @include for-phone{
+            padding: 20px 15px;
+        }
     }
     &__menuGen{
         background: $color-ppal;
@@ -35,7 +50,11 @@
         background-color: $color-enfasis1;
     }
     &__logo{
-        height: 40px;}
+        height: 40px;
+        @include for-phone{
+            height: 25px;
+        }
+    }
     &__link {
         margin: 0px 10px;
         padding: 2px 5px;

@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from './ItemDetail'
 import {doc, getDoc} from 'firebase/firestore'  // Sirve para traer muchos documentos en una coleccion
-import {collectionProductos} from '../../config/firebase'
+import {collectionProductos} from '../config/firebase'
 
 
 function ItemDetailContainer () {
@@ -13,7 +13,7 @@ function ItemDetailContainer () {
 
     useEffect(() => {
       const ref = doc(collectionProductos, id)
-      getDoc(ref) //console.log(ref)
+      getDoc(ref)
         .then((response)=>{
           setItem({
             id: response.id,

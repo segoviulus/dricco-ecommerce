@@ -7,6 +7,7 @@ function Categorias() {
         <Link className='header__link' to="categoria/tv">Tv</Link>
         <Link className='header__link' to="categoria/airesplit">Aire Split</Link>
         <Link className='header__link' to="categoria/celular">Celulares</Link>
+        <Link className='header__link' to="categoria/calefaccion">Calefacción</Link>
 </section>
   )
 }

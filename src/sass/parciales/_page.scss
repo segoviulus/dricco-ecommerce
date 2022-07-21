@@ -1,3 +1,13 @@
+.root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main{
+    flex-grow: 1;
+}
+
 .page{
     border: 1px solid $color-border;
     padding: $pad-contorno;
@@ -21,7 +31,4 @@
             justify-content: flex-end;
         }
         }
-    
-    
-    
 }

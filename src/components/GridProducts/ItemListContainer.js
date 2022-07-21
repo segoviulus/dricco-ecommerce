@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams} from "react-router-dom"
 import ItemList from './ItemList'
-import {collectionProductos} from '../../config/firebase'
+import {collectionProductos} from '../config/firebase'
 import {getDocs, query, where} from 'firebase/firestore'  // Sirve para traer muchos documentos en una coleccion
 //  collection: Evito usar query y puedo generarlo a travez del mismo
 
@@ -36,17 +36,17 @@ function ItemListContainer() {
     setItems(productList_map)
     
     })
-
-    .catch ((error) => {
+    .catch((error) => {
       console.log(error)
     })
 
-  }, [items, categoria])
+  }, [categoria])
 
   if (items.length > 0)
 
   return (
     <div className='cardList'>
+      <img className='hero' src="/images/hero.avif" alt="" />
       <ItemList productList={items}/>
     </div>
     
