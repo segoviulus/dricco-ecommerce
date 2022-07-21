@@ -11,7 +11,7 @@
 
 * **Desarrollado por el estudiante:** Alejandro Ariel Segovia
 
-* **Proyecto final:** https://segoviulus.github.io/ecoommerce-react/
+* **Proyecto final:** https://segoviulus.github.io/dricco-ecommerce
 
 ## Fundamentación
 Podria escribir acerca de la fortuna, el camino recorrido y sobre la profundidad de esta eleccion pero la verdad es que no queria pensar en diseno y decidi copiar la web de DRICCO. Porque?, porque justo estaba viendo para comprarme un TV para el mundial. Fin.
