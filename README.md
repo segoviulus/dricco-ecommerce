@@ -43,7 +43,7 @@ Podria escribir acerca de la fortuna, el camino recorrido y sobre la profundidad
 ![Home](/public/images/home.jpeg)
 
 ### Uso de la App
-[YouTube](/public/images/home.jpeg)
+[YouTube](https://youtu.be/TNAPUpnrKHU)
 
 ## Contacto
 LinkedIn: [ariel-segovia](https://www.linkedin.com/in/ariel-segovia/)
